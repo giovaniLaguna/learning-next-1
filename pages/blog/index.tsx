@@ -13,8 +13,7 @@ const Blog: NextPageWithLayout<PostProps> = ({ posts }) => {
     <ul>
       {posts.map((post) => (
         <li key={post.id}>
-          <Link href={`/blog/${post.id}`}></Link>
-          {post.title}
+          <Link href={`/blog/${post.id}`}>{post.title}</Link>
         </li>
       ))}
     </ul>
